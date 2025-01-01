@@ -13,3 +13,17 @@ network 12.1.1.0 0.0.0.255 area 0<br>
 wr<br>
 <br>
 Other Routers are set up according to their IP Networks<br>
+
+# DHCP
+![image](https://github.com/user-attachments/assets/f3a64a2d-2ff2-44a3-a6f2-6d62f70e42b5)
+
+
+- CLI Commands for DHCP Configuration <br>
+R1: <br>
+enable <br>
+configure terminal <br>
+ip dhcp pool BURAK-POOL <br>
+network 192.168.1.0 255.255.255.0 <br>
+default-router 192.168.1.1 <br>
+dns-server 192.168.1.254 <br>
+wr <br>
