@@ -10,5 +10,6 @@ router-id 1.1.1.1 <br>
 network 1.1.1.1 0.0.0.0 area 0<br>
 network 192.168.0.0 0.0.0.255 area 0<br>
 network 12.1.1.0 0.0.0.255 area 0<br>
+wr<br>
 <br>
 Other Routers are set up according to their IP Networks<br>
