@@ -4,6 +4,7 @@
 R1:<br>
 enable<br>
 configure terminal<br>
+router ospf 10<br>
 log-adjacency-changes<br>
 router-id 1.1.1.1 <br>
 network 1.1.1.1 0.0.0.0 area 0<br>
