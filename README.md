@@ -15,7 +15,7 @@ wr<br>
 Other Routers are set up according to their IP Networks<br>
 
 # DHCP
-![image](https://github.com/user-attachments/assets/f3a64a2d-2ff2-44a3-a6f2-6d62f70e42b5)
+![image](https://github.com/user-attachments/assets/c63e33bf-9265-4681-8dcd-7579e3adfa44)
 
 
 - CLI Commands for DHCP Configuration <br>
