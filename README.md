@@ -14,7 +14,7 @@ wr<br>
 <br>
 Other Routers are set up according to their IP Networks<br>
 
-# DHCP
+# 02. DHCP
 ![image](https://github.com/user-attachments/assets/c63e33bf-9265-4681-8dcd-7579e3adfa44)
 
 
