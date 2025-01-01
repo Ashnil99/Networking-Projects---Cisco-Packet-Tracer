@@ -5,7 +5,7 @@ R1:
 enable
 configure terminal
 log-adjacency-changes
-router-id 1.1.1.1
+router-id 1.1.1.1 <br>
 network 1.1.1.1 0.0.0.0 area 0
 network 192.168.0.0 0.0.0.255 area 0
 network 12.1.1.0 0.0.0.255 area 0
