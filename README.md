@@ -27,3 +27,17 @@ network 192.168.1.0 255.255.255.0 <br>
 default-router 192.168.1.1 <br>
 dns-server 192.168.1.254 <br>
 wr <br>
+
+# 03. VLANs
+
+![image](https://github.com/user-attachments/assets/7d6b62da-891b-42df-9595-544e13028d52)
+
+- CLI Commands for Configuring Two VLANs
+R1: <br>
+enable <br>
+configure terminal <br>
+interface range fastethernet 0/1-2<br>
+switchport access vlan 2 <br>
+interface range fastethernet 0/3-4 <br>
+switchport access vlan 3 <br>
+wr <br>
