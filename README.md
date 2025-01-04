@@ -32,7 +32,7 @@ wr <br>
 
 ![image](https://github.com/user-attachments/assets/7d6b62da-891b-42df-9595-544e13028d52)
 
-- CLI Commands for Configuring Two VLANs
+- CLI Commands for Configuring Two VLANs <br>
 R1: <br>
 enable <br>
 configure terminal <br>
@@ -41,3 +41,16 @@ switchport access vlan 2 <br>
 interface range fastethernet 0/3-4 <br>
 switchport access vlan 3 <br>
 wr <br>
+
+# 04. TRUNK 
+
+![TRUNK](https://github.com/user-attachments/assets/972c1c07-b078-4cfe-b683-377472cb4cee)
+
+- CLI Configuration for Trunk link <br>
+
+SW1: <br>
+switchport mode trunk <br>
+
+SW2: <br>
+switchport trunk encapsulation dot1q <br>  
+switchport mode trunk <br>
