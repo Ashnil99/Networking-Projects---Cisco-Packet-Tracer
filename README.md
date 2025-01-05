@@ -54,3 +54,36 @@ switchport mode trunk <br>
 SW2: <br>
 switchport trunk encapsulation dot1q <br>  
 switchport mode trunk <br>
+
+# 05. BGP
+
+![image](https://github.com/user-attachments/assets/dac56a9f-d96e-49dc-9442-ec5782856cc9)
+
+R1 <br>
+int loopback0<br>
+ip address 10.0.0.5 255.0.0.0<br>
+no shut<br>
+exit<br>
+int g0/0<br>
+ip address 192.168.0.5 255.255.255.0<br>
+no shut<br>
+exit<br>
+router bgp 1234<br>
+neighbor 192.168.0.6 remote-as 5678<br>
+network 10.0.0.0<br>
+end<br>
+
+R2 <br>
+int loopback0<br>
+ip address 172.16.0.5 255.255.0.0<br>
+no shut<br>
+int g0/0<br>
+ip address 192.168.0.6 255.255.255.0<br>
+no shut<br>
+exit<br>
+router bgp 5678<br>
+neighbor 192.168.0.5 remote-as 1234<br>
+network 172.168.0.5<br>
+end<br>
+
+
