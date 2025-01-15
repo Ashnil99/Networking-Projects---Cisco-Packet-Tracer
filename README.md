@@ -86,4 +86,41 @@ neighbor 192.168.0.5 remote-as 1234<br>
 network 172.168.0.5<br>
 end<br>
 
+# 06. IDS 
+![image](https://github.com/user-attachments/assets/8bffde4e-bd51-42e9-bb91-f30b129b6e3e)
+
+license boot module c1900 technology-package securityk9<br>
+yes<br>
+end<br>
+wr<br>
+reload<br>
+mkdir ipsdir<br>
+conf t<br>
+ip ips config location ipsdir<br>
+ip ips name iosips<br>
+ip ips signature-category<br>
+caregory all<br>
+retired true<br>
+exit<br>
+category ios_ips basic<br>
+retired false<br>
+exit<br>
+exit<br>
+
+int g0/1<br>
+ip ips iosips out<br>
+exit<br>
+logging host 192.168.1.50<br>
+service timestamps log datetime msec<br>
+ip ips signature-definition<br>
+signature 2004 0<br>
+status<br>
+retired false<br>
+enabled true<br>
+exit<br>
+engine<br>
+event-action produce-alert<br>
+event-action deny-packet-inline<br>
+<br>
+do sh ip ips all<br>
 
