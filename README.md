@@ -86,7 +86,7 @@ neighbor 192.168.0.5 remote-as 1234<br>
 network 172.168.0.5<br>
 end<br>
 
-# 06. IDS (Intrusion Detection System)
+# 06. IPS (Intrusion Prevention System)
 ![image](https://github.com/user-attachments/assets/8bffde4e-bd51-42e9-bb91-f30b129b6e3e)
 
 R1: <br>
