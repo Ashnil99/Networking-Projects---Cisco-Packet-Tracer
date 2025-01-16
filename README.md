@@ -89,6 +89,7 @@ end<br>
 # 06. IDS (Intrusion Detection System)
 ![image](https://github.com/user-attachments/assets/8bffde4e-bd51-42e9-bb91-f30b129b6e3e)
 
+R1: <br>
 license boot module c1900 technology-package securityk9<br>
 yes<br>
 end<br>
