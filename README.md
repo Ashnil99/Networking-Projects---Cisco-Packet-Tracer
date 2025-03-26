@@ -131,8 +131,8 @@ do sh ip ips all<br>
 
 I used OSPF for complementing the MPLS, <br>
 
-IP Configurations, <br>
-OSPF Configurations<br>
+First did the IP Configurations, <br>
+Then OSPF Configurations<br>
 
 MPLS:<br>
 
