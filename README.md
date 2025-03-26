@@ -125,3 +125,58 @@ event-action deny-packet-inline<br>
 <br>
 do sh ip ips all<br>
 
+# 07. MPLS (Multi Protocol Label Switching)
+
+![image](https://github.com/user-attachments/assets/26989574-bd58-42be-944b-cdb16f75d408)
+
+I used OSPF for complementing the MPLS, <br>
+
+IP Configurations, <br>
+OSPF Configurations<br>
+
+MPLS:<br>
+
+R1:<br>
+
+mpls label protocol ldp<br>
+mpls label range 20 30<br>
+mpls ldp router-id lo 0 force<br>
+
+Make R1-R2-R3-R4 Interfaces MPLS:<br>
+
+int f0/0<br>
+mpls ip<br>
+
+int f1/0<br>
+mpls ip<br>
+
+R2:<br>
+
+mpls label range 60 90<br>
+mpls label protocol ldp<br>
+mpls ldp router-id lo 0 force<br>
+
+R3:<br>
+ 
+mpls label range 100 120<br>
+mpls label protocol ldp<br>
+mpls ldp router-id lo 0 force<br>
+
+
+mpls label range 60 90<br>
+mpls label protocol ldp<br>
+mpls ldp router-id lo 0 force<br>
+
+R4:<br>
+
+mpls label range 999 1090<br>
+mpls label protocol ldp<br>
+mpls ldp router-id lo 0 force<br>
+
+To check range and MPLS table:<br>
+
+show mpls label range<br>
+show mpls forwarding-table<br>
+
+
+
